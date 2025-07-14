@@ -1,10 +1,12 @@
 {
   "name": "projeto-node",
   "version": "1.0.0",
+  "description": "Projeto Node.js para pipeline Jenkins",
+  "main": "app.js",
   "scripts": {
-    "test": "node test.js"  // ou use um framework tipo jest/mocha
+    "test": "node test.js"
   },
-  "dependencies": {
-    // suas dependências aqui
-  }
+  "author": "Vinícius José Nejaim Castro",
+  "license": "MIT",
+  "dependencies": {}
 }
