@@ -8,15 +8,16 @@ pipeline {
             }
         }
 
-        stage('Testar') {
+        stage('Build e Testes') {
             steps {
-                sh 'chmod +x test.sh && ./test.sh'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Simulando build...'
+                script {
+                    docker.image('node:18').inside {
+                        sh 'npm install'
+                        sh 'npm test'
+                        // se tiver build, descomenta:
+                        // sh 'npm run build'
+                    }
+                }
             }
         }
     }
