@@ -1,0 +1,10 @@
+{
+  "name": "projeto-node",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test.js"  // ou use um framework tipo jest/mocha
+  },
+  "dependencies": {
+    // suas dependências aqui
+  }
+}
